@@ -2,6 +2,7 @@
     /*      Text      */
     /*  0^ = Lighter  */
     /*  0v = Darker   */
+    --astr-tone2: #fabbcf;
     --astr-tone1: #f090b0;
     --astr-tone0: #f0719b;
     --astr-tone-1: #945066;
@@ -17,7 +18,7 @@
 body {
     background-color: var(--astr-main);
     color:  var(--astr-tone0);
-    margin: 0px;
+    margin: 0;
     padding: 1vh;
     min-height: 100vh;
 }
@@ -38,7 +39,7 @@ pre {
 
 hr {
     margin: 5vh;
-    border: 0px;
+    border: 0;
     height: 5px;
     background-color: var(--astr-tone-1);
     border-radius: 100vh;
@@ -52,7 +53,19 @@ p {
     font-size: 1.5vh;
     margin-top: auto;
     font-family: var(--astr-font), Times, serif;
-  }
+}
+
+a {
+    text-decoration: underline;
+    color: var(--astr-tone-2);
+    text-decoration-color: var(--astr-tone-2);
+}
+
+a:visited {
+    text-decoration: underline;
+    color: var(--astr-tone-2);
+    text-decoration-color: var(--astr-tone-2);
+}
 
 /*  Scroolbar  */
 ::-webkit-scrollbar {
