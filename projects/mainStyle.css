@@ -117,3 +117,15 @@ a:visited {
     max-height: 50vh;
     max-width: 50vh;
 }
+
+#drop-area {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed var(--astr-tone2);
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+#drop-area.highlight {
+    border-color: var(--astr-tone2);
+}
